@@ -18,7 +18,7 @@
 </p>
 </div>
 
-# **Minecraft Skripts Pack For All**
+# **Minecraft Skripty PL**
 
 Zbiór polskich skryptów stworzonych przez **theprzemoo** dla serwerów Minecraft opartych na **Skript 2.13.0+** (wersja gry 1.21.5).
 Projekt powstał z myślą o nauce Skripta oraz dla osób, które wolą lekkie rozwiązania bez pluginów.
