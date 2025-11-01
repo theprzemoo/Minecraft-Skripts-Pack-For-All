@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="#" target="_blank" rel="noreferrer">
-<img src="[https://github.com/theprzemoo/Minecraft-Skripts-Pack-For-All/blob/main/logo.png?raw=true)" width="400" alt="logo"/>
+<img src="https://raw.githubusercontent.com/theprzemoo/Minecraft-Skripts-Pack-For-All/main/logo.png" width="400" alt="logo"/>
 </a>
 <br><br>
 
