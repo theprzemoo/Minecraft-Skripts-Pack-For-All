@@ -2,19 +2,22 @@ command /heal [<player>]:
     permission: skript.heal.use
     permission message: &cNie masz uprawnień do tej komendy!
     trigger:
-        if arg-1 is set:
-            if player has permission "skript.heal.others":
-                set {_target} to arg-1
-                if {_target} is online:
-                    heal {_target}
-                    feed {_target}
-                    send "&aUleczyłeś %{_target}%!"
-                    send "&aZostałeś uleczony!" to {_target}
-                else:
-                    send "&cTen gracz jest offline!"
-            else:
-                send "&cNie masz uprawnień do leczenia innych!"
-        else:
+        if arg-1 isn't set:
             heal player
             feed player
             send "&aZostałeś uleczony!"
+            stop
+
+        if player doesn't have permission "skript.heal.others":
+            send "&cNie masz uprawnień do leczenia innych!"
+            stop
+
+        if arg-1 is not online:
+            send "&cTen gracz jest offline!"
+            stop
+
+        heal arg-1
+        feed arg-1
+        send "&aZostałeś uleczony!" to arg-1
+        if arg-1 is not sender:
+            send "&aUleczyłeś %arg-1%!"
